@@ -708,6 +708,9 @@ __weak void HAL_DCMI_ErrorCallback(DCMI_HandleTypeDef *hdcmi)
   */
 __weak void HAL_DCMI_LineEventCallback(DCMI_HandleTypeDef *hdcmi)
 {
+  /* Prevent unused argument(s) compilation warning */
+  UNUSED(hdcmi);
+
   /* NOTE : This function Should not be modified, when the callback is needed,
             the HAL_DCMI_LineEventCallback could be implemented in the user file
    */
